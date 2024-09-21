@@ -1,3 +1,3 @@
-# just a random website for my good friends
+# just a random website for my good friend
 
 # просто рандомный сайт для моей хорошей подруги
