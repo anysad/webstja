@@ -1,0 +1,49 @@
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+
+    padding: 0 1rem 1rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    margin-bottom: 100px;
+}
+
+.media-element {
+    padding: 0.5rem;
+    display: grid;
+}
+
+.media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(1rem, 1rem);
+    scroll-padding-inline: 1rem;
+}
+
+.snaps-inline>* {
+    scroll-snap-align: start;
+}
+
+.media-scroller::-webkit-scrollbar {
+    height: 13px;
+}
+
+.media-scroller::-webkit-scrollbar-thumb,
+.media-scroller::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+
+.media-scroller::-webkit-scrollbar-track {
+    background: var(--thumb);
+}

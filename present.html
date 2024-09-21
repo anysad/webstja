@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--CSS Styles -->
+        <link rel="stylesheet" href="css/present/style.css" />
+        <link rel="stylesheet" href="css/button2.css" />
+        <link rel="stylesheet" href="css/present/scrollCard.css" />
+        <link rel="stylesheet" href="css/present/photoGallery.css" />
+    
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+    
+        <!-- Animate CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>Вебстя | Подарочный секрет 🤫</title>
+        <link rel="icon" type="image/x-icon" href="assets/icons/confetti.ico">
+    </head>
+<body>
+    <audio id="music" autoplay loop></audio>
+    <script src="js/functions.js"></script>
+    <script src="js/main/mainPresent.js"></script>
+    <script src="js/main/photoGallery.js"></script>
+    <script src="js/confetti.js"></script>
+
+    <div class="content" id="content">
+        <h1>С ДНЁМ РОЖДЕНИЯЯЯЯЯ!!!!!!!!!!</h1>
+        <h2>Поздравления от людей 🤫</h2>
+        <div class="container" id="cardCont">
+            <ul class="cards" id="cards">
+                <script>addCards()</script>
+            </ul>
+        </div>
+        <h2>Рандомные смешные/кринжовые фотки 🤐</h2>
+        <div class="media-scroller snaps-inline">
+            <script>addPhotos()</script>
+        </div>
+        <h2>А это что такое... 🤨</h2>
+        <video class="video" id="video" width="960" height="540" controls>
+            <source src="assets/videos/video.mp4" type="video/mp4">
+          </video>
+    </div>
+
+    <script>
+        confetti()
+    </script>
+
+    <script>
+        var video = document.getElementById('video')
+        var music = document.getElementById('music')
+
+        video.onplaying = function() {
+            music.volume = 0
+        }
+
+        video.onpause = function() {
+            music.volume = 0.3
+        }
+    </script>
+</body>
+</html>
