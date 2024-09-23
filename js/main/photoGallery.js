@@ -1,4 +1,4 @@
-const amountOfPhotos = 10; 
+const amountOfPhotos = 13; 
 
 function addPhotos() {
     var photoDiv = document.querySelector('.media-scroller') 
