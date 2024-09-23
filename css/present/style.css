@@ -66,5 +66,7 @@ h1 {
 }
 
 .video {
+  width: 50%;
+  box-shadow: 10px 7px 25px 7px #585963;
     margin-bottom: 100px;
 }
