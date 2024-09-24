@@ -24,7 +24,7 @@ const delays = [
     1000,
     2000,
     5000,
-    10000
+    5000
 ];
 
 let currentIndex = 0;
@@ -74,8 +74,8 @@ function updateContent() {
         currentIndex = (currentIndex + 1) % texts.length;
 
         // Change the elements
-        textElement.textContent = texts[currentIndex];
         imageElement.src = imagePaths[currentIndex];
+        textElement.textContent = texts[currentIndex];
         setTimeout(() => {
             buttonElement.style.display = 'inline-block';
             buttonElement.textContent = buttonLabels[currentIndex];
